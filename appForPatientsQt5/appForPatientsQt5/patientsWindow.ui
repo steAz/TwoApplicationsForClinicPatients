@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>351</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProgram">
+    <property name="title">
+     <string>Program</string>
+    </property>
+    <addaction name="actionO_programie"/>
+    <addaction name="actionZako_cz"/>
+   </widget>
+   <widget class="QMenu" name="menuWizyty">
+    <property name="title">
+     <string>Wizyty</string>
+    </property>
+    <widget class="QMenu" name="menuPodgl_d_wizyt">
+     <property name="title">
+      <string>Podgląd wizyt</string>
+     </property>
+     <addaction name="actionNadchodz_ce_wizyty"/>
+     <addaction name="actionZako_czone_wizyty"/>
+    </widget>
+    <addaction name="menuPodgl_d_wizyt"/>
+    <addaction name="actionUm_w_wizyt"/>
+   </widget>
+   <widget class="QMenu" name="menuKontakt">
+    <property name="title">
+     <string>Kontakt</string>
+    </property>
+   </widget>
+   <addaction name="menuProgram"/>
+   <addaction name="menuWizyty"/>
+   <addaction name="menuKontakt"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionO_programie">
+   <property name="text">
+    <string>O programie</string>
+   </property>
+  </action>
+  <action name="actionZako_cz">
+   <property name="text">
+    <string>Zakończ</string>
+   </property>
+  </action>
+  <action name="actionNadchodz_ce_wizyty">
+   <property name="text">
+    <string>Nadchodzące wizyty</string>
+   </property>
+  </action>
+  <action name="actionZako_czone_wizyty">
+   <property name="text">
+    <string>Zakończone wizyty</string>
+   </property>
+  </action>
+  <action name="actionUm_w_wizyt">
+   <property name="text">
+    <string>Umów wizytę</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
